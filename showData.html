@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户信息</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="assets/bootstrap/bootstrap.css">
+    <style>
+        .userData{
+            margin-top: 30px;
+        }
+        .title{
+            margin-bottom: 40px;
+            color: #0a71f5;
+        }
+        .table > thead > tr > th,.table > tbody > tr > td{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="userData">
+    <div class="container">
+        <h1 class="title">用户信息展示</h1>
+        <table class="table table-striped table-hover" style="min-width: 768px;overflow-x: scroll">
+           <thead>
+                <tr>
+                    <th>#</th>
+                    <th>用户名</th>
+                    <th>电话</th>
+                    <th>邮箱</th>
+                    <th>公司名称</th>
+                    <th>问题</th>
+                </tr>
+           </thead>
+            <tbody id="cont">
+
+            </tbody>
+        </table>
+        <div class="page" style="text-align: center">
+            <ul class="pagination"></ul>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/html" id="tpl_cont">
+    <% for(var i = 0 ; i < list.length ; i ++ ){ %>
+    <tr>
+        <td style="width: 4%"><%=(pageNum-1)*pageSize+i+1%></td>
+        <td style="width: 10%"><%=list[i].customerName%></td>
+        <td style="width: 10%"><%=list[i].customerPhone%></td>
+        <td style="width: 10%"><%=list[i].customerEmail%></td>
+        <td style="width: 20%"><%=list[i].customerCompany%></td>
+        <td style="width: 46%"><%=list[i].customerProblem%></td>
+    </tr>
+    <% } %>
+</script>
+<script src="js/public/jquery-3.3.1.min.js"></script>
+<script src="assets/bootstrap/bootstrap.min.js"></script>
+<script src="js/public/bootstrap-paginator.min.js"></script>
+<script src="js/public/template-web.js"></script>
+
+<script>
+    $(function () {
+        var currPage = 1;
+        var render = function () {
+            getData({
+                'pageNum': currPage,
+                'pageSize': 10
+            }, function (data) {
+                var html = template('tpl_cont',data)
+                $('#cont').html(html);
+                setPaginator(data.pageNum, Math.ceil(data.total / data.pageSize), render);
+            });
+        };
+        render();
+
+        var setPaginator = function (pageCurr, pageSum, callback) {
+            $('.pagination').bootstrapPaginator({
+                bootstrapMajorVersion: 3,
+                size: 'small',
+                currentPage: pageCurr,
+                totalPages: pageSum,
+                onPageClicked: function (event, originalEvent, type, page) {
+                    currPage = page;
+                    callback && callback();
+                }
+            });
+        }
+
+    })
+    var getData = function (params, callback) {
+        $.ajax({
+            url:'http://39.105.105.172:9999/customer/selectVideoCloudInfo',
+            type:'post',
+            dataType:'json',
+            data:params,
+            success:function (data) {
+                callback && callback(data)
+            }
+        })
+    }
+</script>
+</body>
+</html>

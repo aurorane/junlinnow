@@ -1,0 +1,122 @@
+.all-cont{
+    padding-top: 60px;
+}
+.news-cont{
+    background: #fff;
+    box-shadow: 0px 0px 5px #ccdded;
+    width: 100%;
+    border-radius: 4px;
+    padding: 64px;
+}
+.news-cont h3{
+    color: #2c4156;
+    font-weight: 600;
+}
+.news-cont .author{
+    padding-top: 24px;
+    font-size: 14px;
+    color: #718190;
+    padding-bottom: 26px;
+}
+.news-cont .author span:first-child{
+    margin-right: 44px;
+}
+.news-cont p{
+    color: #182d41;
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.detail_cont h4{
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.detail_cont img{
+    margin-bottom: 20px;
+    width: 100%;
+}
+.detail_cont ul{
+    margin-bottom: 10px;
+    padding-left: 20px;
+}
+
+.pages{
+    width: 100%;
+    margin-top: 32px;
+    padding-bottom: 48px;
+}
+.pages button{
+    background: #fff;
+    color:#182d41;
+    text-align: center;
+    border: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0px 0px 10px #E2E5E9;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+.pages button:hover{
+    background: #00a0e9;
+    color: #fff;
+}
+.pages .prev{
+    width: 20%;
+    float: left;
+}
+.pages .next{
+    width: 20%;
+    float: right;
+}
+.pages .back{
+    width: 50%;
+    margin-left: 5%;
+}
+
+
+.news-list{
+    background: #fff;
+    box-shadow: 0px 0px 5px #ccdded;
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 48px;
+}
+.news-list h3{
+    height: 64px;
+    line-height: 64px;
+    border-bottom: 1px solid #eeeeee;
+    padding: 0 22px;
+    color: #2c4156;
+}
+
+.news-list li{
+    margin: 20px 22px 0px;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 12px;
+}
+.news-list li:last-child{
+    border-bottom: none;
+}
+.news-list li h4{
+    line-height: 28px;
+    color: #2c4156;
+}
+.news-list li a:hover h4{
+    color: #00a0e9;
+}
+.news-list li .author{
+    font-size: 14px;
+    color: #718190;
+    margin-top: 6px;
+}
+.news-list li .author b{
+    margin: 0 20px;
+}
+
+@media (max-width: 768px) {
+    .news-cont{
+        padding: 64px 20px;
+    }
+}

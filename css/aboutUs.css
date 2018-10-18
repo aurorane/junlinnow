@@ -1,0 +1,320 @@
+.banner{
+    width: 100%;
+    height: 540px;
+    background-color: #0054A7;
+}
+.banner-cont{
+    width: 100%;
+    height: 540px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.banner-cont h1{
+    color: #fff;
+}
+.banner-word{
+    padding-top: 240px;
+}
+.banner-word p{
+    font-size: 20px;
+    line-height: 64px;
+}
+.banner-img{
+    position: relative;
+}
+.banner-img img{
+    position: absolute;
+    right: 0;
+    bottom: 120px;
+    height: 245px;
+}
+
+.all-cont{
+    background: #EFF3F9;
+    /*padding-bottom: 90px;*/
+}
+/*公司简介*/
+.company-profile{
+    padding-top: 96px;
+
+}
+.company-profile h1{
+    text-align: center;
+    margin-bottom: 64px;
+}
+.company-profile .company-logo{
+    text-align: center;
+    padding-top: 48px;
+    padding-bottom: 32px;
+}
+.company-profile p{
+    font-size: 16px;
+    line-height: 30px;
+    padding: 0 100px;
+    color: #2c4156;
+}
+/*君林文化*/
+.culture{
+    margin-top: 56px;
+}
+.culture .row{
+    background-color: #fff;
+
+}
+.culture .row:hover{
+    box-shadow: 0px 0px 25px #C9D3E3;
+    /*D6E2F0*/
+}
+.culture h1{
+    text-align: center;
+    margin-bottom: 64px;
+}
+.culture .row{
+    margin-bottom: 25px;
+}
+.culture .col-md-6{
+    padding: 0;
+}
+.culture .culture-cont{
+    padding-left: 64px;
+}
+.culture .culture-cont h4{
+    padding-top: 20px;
+    font-size: 20px;
+    color: #2b4158;
+}
+.culture .culture-cont h4:first-child{
+    padding-top: 48px;
+}
+.culture .culture-cont p{
+    font-size: 16px;
+    color: #637685;
+    line-height: 40px;
+}
+.culture img{
+    vertical-align: bottom;
+}
+.cul_img1{
+    display: none;
+}
+/*发展经历*/
+.home-about-wrap{
+    text-align: center;
+    margin-top: 71px;
+    margin-bottom: 56px;
+}
+.home-about-wrap .home-about-cont{
+    background: url("../images/map.png") center no-repeat;
+    background-size: 100%;
+    text-align: center;
+}
+.home-about-wrap h1{
+    text-align: center;
+    margin-bottom: 24px;
+}
+#yearList li{
+    color: #647687;
+}
+.year-dot{
+    background-color: #d1d5d9;
+}
+#btnLeft,#btnRight{
+    background: transparent;
+    box-shadow: none;
+    line-height: normal;
+}
+#timeLine{
+    margin: 64px auto 0;
+}
+/*团队介绍*/
+.teamdes{
+    margin-top: 96px;
+    margin-bottom: 54px;
+}
+.teamdes h1{
+    text-align: center;
+}
+
+#myself {
+    position: relative;
+    width: 100%;
+    display: block;
+    margin-top: 44px;
+    margin-bottom: 40px;
+}
+.wrap {
+    width: 585px;
+    height: 540px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slidepic {
+    position: relative;
+}
+.toggle {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.toggle a {
+    position: absolute;
+    left: -88px;
+    top: 245px;
+    width: 80px;
+    height: 80px;
+    background: rgba(0,0,0,0.1);
+    border-radius: 50%;
+    line-height: 80px;
+    text-align: center;
+
+}
+.toggle a img{
+    /*width: 100%;*/
+}
+.me{
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: #666;
+    text-align:center;
+}
+
+
+.slidepic ul {
+    position: absolute;
+    left: 0;
+    top:0px;
+    z-index: 1;
+    list-style-type: none;
+}
+
+.toggle .next{
+    right:0px;
+    left: 602px;
+}
+
+.slidepic li {
+    position: absolute;
+    width: 450px;
+    height: 418px;
+    left: 0px;
+    top: 0;
+    background-color: #fff;
+    list-style-type: none;
+    padding: 0 40px;
+    box-shadow: 0px 0px 25px #C9D3E3;
+}
+.slidepic li .per_des{
+
+}
+
+.team_des {
+    display: none;
+    text-align: center;
+    margin-top: 64px;
+}
+
+.team_des .per_des{
+    background: #fff;
+    box-shadow: 0px 0px 25px #C9D3E3;
+    margin-bottom: 20px;
+    padding: 20px 16px 40px;
+}
+.per_des h4{
+    margin-top: 25px;
+    margin-bottom: 10px;
+     text-align: center;
+}
+ .per_des p{
+    line-height: 36px;
+    font-size: 14px;
+    text-align: left;
+}
+ .per_des img{
+    margin-top: 20px;
+}
+
+
+
+@media (max-width: 1200px) {
+    .culture .culture-cont h4{
+        padding-top: 10px;
+    }
+    .culture .culture-cont h4:first-child{
+        padding-top: 40px;
+    }
+
+
+
+}
+@media (max-width: 992px) {
+    .culture .culture-cont{
+        padding-left: 34px;
+    }
+    .culture .culture-cont h4{
+        padding-top: 12px;
+    }
+    .culture .culture-cont p{
+        line-height: 30px;
+    }
+    .culture .culture-cont h4:first-child{
+        padding-top: 20px;
+    }
+}
+@media (max-width: 768px) {
+
+    .banner-cont{
+        display: block;
+        text-align: center;
+    }
+    .banner-word{
+        padding-top: 160px;
+    }
+    .banner-img img{
+        position: relative;
+        width: 306px;
+        height: auto;
+        bottom: -20px;
+    }
+
+
+    .culture .row{
+        width: 100%;
+        margin: 20px auto;
+    }
+    .culture .culture-cont{
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 36px;
+    }
+    .culture .culture-cont h4{
+        padding-top: 36px;
+    }
+    .culture .culture-cont h4:first-child{
+        padding-top: 48px;
+    }
+
+    .cul_img1{
+        display: block;
+    }
+    .cul_img2{
+        display: none;
+    }
+
+
+
+    .company-profile p{
+        padding: 0 16px;
+    }
+
+    #myself{
+        display: none;
+    }
+    .team_des{
+        display: block;
+    }
+
+}

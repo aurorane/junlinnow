@@ -1,0 +1,213 @@
+.banner{
+    width: 100%;
+    height: 540px;
+    background-color: #0054A7;
+}
+.banner-cont{
+    width: 100%;
+    height: 540px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.banner-cont h1{
+    color: #fff;
+}
+.banner-word{
+    padding-top: 240px;
+}
+.banner-word p{
+    font-size: 20px;
+    line-height: 64px;
+}
+.banner-img{
+    position: relative;
+}
+.banner-img img{
+    position: absolute;
+    right: 0;
+    bottom: -46px;
+    height: 446px;
+}
+
+/*中间内容*/
+.all-cont{
+    background: #EFF3F9;
+    padding-bottom: 64px;
+}
+
+/*所有联系方式*/
+.contact-all{
+    padding-top: 64px;
+}
+.contact-cont{
+    background: #fff;
+    box-shadow: 0px 0px 5px #ccdded;
+}
+
+.contact-cont .col-md-6{
+    margin: 80px auto 60px;
+    padding-left: 100px;
+    display: flex;
+    justify-content: flex-start;
+}
+.contact-cont  .small-icon{
+    margin-right: 22px;
+}
+.contact-cont .small-des{
+    height: 120px;
+}
+.contact-cont .small-des h3{
+    margin-bottom: 10px;
+}
+.contact-cont .small-des p{
+    font-size: 14px;
+    color: #647687;
+    line-height: 26px;
+    word-break: break-all;
+}
+.contact-cont .small-des span{
+    color: #00a0e9;
+}
+
+/*微信微博*/
+
+.wei-talk{
+    margin: 34px auto;
+    padding-left: 100px;
+    display: flex;
+    justify-content: flex-start;
+}
+.wei-talk  .small-icon{
+    margin-right: 22px;
+}
+.wei-talk .small-des{
+    height: auto;
+}
+.wei-talk .small-des h3{
+    padding-top: 6px;
+    padding-bottom: 20px;
+}
+.wei-talk .small-des div{
+    border: 10px solid #e7eaec;
+}
+
+/*加入我们*/
+.join_title{
+    text-align: center;
+    margin: 64px 0 48px;
+}
+.tab-pane1{
+    width: 80%;
+    margin: auto;
+}
+.tab-pane1 ul{
+    background: #fff;
+    padding: 0px 32px;
+    box-shadow: 0px 0px 5px #ccdded;
+}
+.tab-pane1 li{
+    padding: 32px 0 0;
+    border-bottom: 1px solid #d3dee9;
+    cursor: pointer;
+}
+.tab-pane1 li img{
+    opacity: 0.6;
+}
+.tab-pane1 li:last-child{
+    border-bottom: none;
+}
+.tab-pane1 .post-title{
+    position: relative;
+
+}
+.tab-pane1 .post-title h3{
+    padding-bottom: 26px;
+}
+.tab-pane1 .post-title p{
+    color:#647687 ;
+    margin-top: 18px;
+    margin-bottom: 12px;
+}
+.tab-pane1 .post-title i{
+    position: absolute;
+    right: 20px;
+    top: 0px;
+}
+
+
+.tab-pane1 .post-des{
+    border-top: 1px solid #d3dee9;
+    display: none;
+}
+.tab-pane1 .post-des h5{
+    font-weight: 600;
+    margin: 10px auto;
+}
+.tab-pane1 .post-des h5:first-child{
+    margin-top: 38px;
+}
+.tab-pane1 .post-des p{
+    color:#647687;
+    font-size: 14px;
+    line-height: 28px;
+}
+.tab-pane1 .post-des button{
+    border: none;
+    background: #00A0E9;
+    color: #fff;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+.tab-pane1 .post-des button:hover{
+    background: rgba(0,160,233,.6);
+}
+.tab-pane1 .post-des p.resume{
+    display:none;
+    color: #00A0E9;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    font-size: 16px;
+}
+
+
+
+@media (max-width: 768px) {
+    .banner-cont{
+        display: block;
+        text-align: center;
+    }
+    .banner-word{
+        padding-top: 160px;
+    }
+    .banner-img img{
+        position: relative;
+        height: 240px;
+        bottom: -20px;
+    }
+    .tab-pane1 .post-des button{
+        display: none;
+    }
+    .tab-pane1 .post-des p.resume{
+        display: block;
+    }
+
+}
+
+@media (max-width: 640px) {
+    .contact-cont .col-md-6{
+        padding:0 44px;
+    }
+    .wei-talk .col-md-6{
+        padding:0 44px;
+    }
+    .tab-pane1{
+        width: 100%;
+    }
+    .tab-pane1 ul{
+        padding: 0 18px;
+    }
+
+}

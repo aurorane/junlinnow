@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+#timeLine{width: 100%;margin: 40px auto 0px auto;/*border:  solid 1px #434343;*//*background: rgba(500,500,500,0.9);*/overflow: hidden;}
+#yearList{width: 100%;list-style: none;position: relative;z-index:1;/*left: 457px;margin-left: 457px;*/}
+#yearList:after,.container-li:after{content: "";display: table;clear: both;}
+#yearList li{float: left;text-align: center;font-size: 16px;padding: 10px 39px;}
+.year-dot{width: 10px; height: 10px; border-radius: 5px;background-color: #e3eaf7;margin: 22px auto;display: block;}
+.dotted-line{border-bottom:dashed 1px  #b8cfe6;position: relative;top: -38px;z-index: 0;}
+#cList{width: 100%;position: relative;margin-top:10px;margin-bottom:40px;}
+#btnLeft,#btnRight{cursor:pointer;width:70px;height:70px;background:#fff no-repeat center;position:absolute;border-radius:100%;display:inline-block;box-shadow:0 0 15px rgba(24,55,117,.1);text-align:center;line-height:70px;}
+#btnLeft img,#btnRight img{display: inline-block;margin-top:0px;}
+#btnLeft{left:10px;top:40%;}
+#btnRight{right:10px;top:40%;}
+.cCenter{width:77%;margin:0px auto;overflow:hidden;background:#fff;box-shadow:0 0 15px rgba(24,55,117,.1)}
+#cUl{width: 100%;list-style: none;height: 240px;margin: 0 auto;position: relative;left: 0px;}
+#cUl li{width: 100%;position: absolute;  left: 0;}
+.li-tit{display:block;font-size:24px;text-align:center;color:#333333;margin-top:45px;}
+.container-li{width: 100%;color:#666666;font-size:16px;padding: 20px 45px;line-height:25px;}
+.c-li-left{width: 40%;float: left;}
+.c-li-right{width: 60%;float: right;}
+.year-active{color: #0a71f5;}
+.year-active i{background-color: #0a71f5;}
+@media (max-width: 992px) {
+  .cCenter{
+    width: 73%;
+  }
+
+}
+@media (max-width:768px ) {
+  #cUl{
+    height: 280px;
+  }
+}
+@media (max-width:640px){
+  #timeLine{width:100%;height:auto;}#cUl li{width:100%;}.cCenter{width:90%;}#cUl{height:360px;}
+  #cList{margin-top:10px;}
+  #btnLeft,#btnRight{margin-bottom:30px;top:15px;background:none;box-shadow:0px 0px 0px;border-radius:0px;z-index:966;}
+  #btnLeft{left:15px;}
+  #btnRight{right:15px;}
+  .container-li{padding-left:20px;padding-right:20px;}
+  .li-tit{margin-top:60px;margin-left: 10px;margin-right: 10px}
+}
